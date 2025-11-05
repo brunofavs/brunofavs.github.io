@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "773ce2db3b67a7ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f92a2e09d8daca6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4847c2a4152b2fbd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2313f8dde099432f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a00f9a2afaa45a7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "082a65b84a128353",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ac49b6db9dd163f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "50616d0228a323c8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "47ea893b4365f683",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8572971aabafe99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64819a65d29b3f10",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Meeting notes/Meeting Bolsa RN21 Pós FCT.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Meeting Bolsa RN21 Pós FCT"
+            }
+          },
+          {
+            "id": "7451a80290ae049f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Meeting notes/Meeting Bolsa RN21 Pós FCT.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Meeting Bolsa RN21 Pós FCT"
+            }
+          },
+          {
+            "id": "c268ee84949fb06d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "86f858b534f3f038",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Meeting notes/Meeting Bolsa RN21 Pós FCT.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Meeting Bolsa RN21 Pós FCT"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4847c2a4152b2fbd",
+  "lastOpenFiles": [
+    "RL/Papers Read/A review on reinforcement learning for contact-rich robotic manipulation tasks.md",
+    "Media/Pasted image 20251103230017.png",
+    "Media/Pasted image 20251103225108.png",
+    "Media/Pasted image 20251103205828.png",
+    "Media/Pasted image 20251103205632.png",
+    "Media/Pasted image 20251103193514.png",
+    "Media/Pasted image 20251103193457.png",
+    "Media/Pasted image 20251103193418.png",
+    "RL/Papers Partially Read/Towards Learning Hierarchical Skills for  Multi-Phase Manipulation Tasks.md",
+    "RL/Papers Read",
+    "NCF/Lightroom Installation Tutorial.md",
+    "Media/Pasted image 20251031012628.png",
+    "Media/Pasted image 20251031012445.png",
+    "Media/Pasted image 20251030233423.png",
+    "General Research/Fancy Research Terms.md",
+    "Misc/Color Coding Zotero.md",
+    "General Research",
+    "Search Equations.md",
+    "RL/Plan to Learn RL.md",
+    "RL/Bimanual manipulation RL vs IL?.md",
+    "FCT/Paper gathering for FCT.md",
+    "RL/k-armed bandits are 1 action only as....md",
+    "RL/Early spikes using greedy agent and optimistic initial guess.md",
+    "RL/Funneling in on the PhD focus.md",
+    "RL/Conferences that publish about bimanual manipulation.md",
+    "Misc/Why RGB evaluation is not ambiguous in ATOM.md",
+    "Misc/Photography term I'm always forgetting.md",
+    "Notes regarding issues ATOM/984.md",
+    "Misc/Doubts about technicalities of submitting to MDPI.md",
+    "Misc/Discurso da apresentação da tese.md",
+    "Misc/PC cost.md",
+    "Misc",
+    "Misc/Conferences.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "NCF/To do - Serviços.md",
+    "RL/Course/Algorithms Overview.md",
+    "Meeting notes/9 October 2025.md",
+    "NCF",
+    "RL/Course/Why DynaQ+ only adds  extra reward in planning.md",
+    "RL/Course/How planning helps RL.md",
+    "Meeting notes/Prẽ-FCT",
+    "Photography/Poses/Woman",
+    "Photography/Poses",
+    "Photography/Modelling/Untitled"
+  ]
+}
