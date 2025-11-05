@@ -11,10 +11,14 @@
             "id": "4847c2a4152b2fbd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2025-11-06-Bi-Weekly-Advisor-Meeting-1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-11-06-Bi-Weekly-Advisor-Meeting-1"
             }
           }
         ]
@@ -167,6 +171,7 @@
   },
   "active": "4847c2a4152b2fbd",
   "lastOpenFiles": [
+    "2025-11-06-Bi-Weekly-Advisor-Meeting-1.md~",
     "RL/Papers Read/A review on reinforcement learning for contact-rich robotic manipulation tasks.md",
     "Media/Pasted image 20251103230017.png",
     "Media/Pasted image 20251103225108.png",
