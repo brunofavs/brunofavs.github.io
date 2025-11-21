@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-bi-weekly-advisor-meeting-06-of-november-2025",
+        },{id: "post-why-does-the-policy-improvement-theorem-not-hold-true-in-function-approximation",
+        
+          title: "Why does the Policy Improvement Theorem not hold true in function approximation",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/PTI_in_Func_Approx/";
+          
+        },
+      },{id: "post-bi-weekly-advisor-meeting-06-of-november-2025",
         
           title: "Bi-Weekly Advisor Meeting 06 of November 2025",
         
