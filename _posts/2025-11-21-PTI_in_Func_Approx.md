@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why does the Policy Improvement Theorem not hold true in function approximation
-date: 2025-11-06 11:12:00-0400
+date: 2025-11-21 11:12:00-0400
 description: this is what included images could look like
 tags: "theory" 
 images:
