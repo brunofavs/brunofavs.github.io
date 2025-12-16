@@ -187,4 +187,39 @@ Like in other articles, a frequent environment used to test human models is the 
 %}
 
 
+####  Active exploration and parameterized reinforcement  learning applied to a simulated human-robot  interaction task
+
+This study was too overly focused on multi-armed bandits. Multi-armed bandits are a typical type of problem used when one is first learning *Reinforcement Learning*. Whereas
+typical RL environments are modelled with a *Markov Decision Process* (MDP), involving state transition probability functions, discount factors, etc... bandits are a simpler
+environment with only one state. For example choosing a restaurant to eat for a series of days. The concern is shifted from which action on a certain state to only which action
+has a higher value. 
+
+Like the previous study, this one also refers *Boltzmann Rationality* for modelling human actions as well as the 2D Soccer Pass environment. Although the latter only briefly.
+
+#### Adaptable automation with modular deep reinforcement learning and policy transfer
+
+This study talks about a lot of new (to me) ideas in modular Reinforcement Learning. In its core, Modular RL is the idea of decomposing a task into several simpler modules, which
+can be learned separately and reused in learning new manipulation tasks. Each module can have its own reward function.
+
+The general idea is built on the assumption that modules are reusable neural network functions. Therefore, they can be pre-trained and recombined in different ways to tackle new
+tasks. Thus, instead of training a single network on a complex task that would take a long time, one can train on many different task module networks.
+
+The paper proposes a new variation of the SAC algorithm, HASAC. Its goal is to enhance an agent’s adaptability to new tasks by transferring the learned policies of former tasks to
+the new task through a "hyper-actor". I did not dive deeply into how this works, as I have still to properly study the baseline SAC algorithm.
+
+Uses the Meta World benchmark, from 2020, containing various single and multi-tasks robotic manipulation tasks. 
+
+The study also highlights one concept that has a particular interest in Meta-Learning, inductive bias.
+
+From [here](https://www.reddit.com/r/MLQuestions/comments/egof3l/comment/fc8u0fi/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button): 
+
+> Inductive bias is restricting your hypothesis space to a certain class of hypotheses. In simpler terms, it's a guess about what the function looks like, before looking at data. Take regression: if you have a finite set of points, you can draw infinitely many different functions that fit them. But if you assume that the function is linear, you remove almost all possibilities (there are still infinitely many linear functions, but way, way fewer than functions in general).
+Common inductive biases are smoothness and sparsity. Pretty much all used models include smoothness somehow: similar inputs have similar outputs. Sparsity is also very common: it's the assumption that the function depends on few inputs.
+Without an inductive bias, machine learning is impossible. If something in machine learning works well, more often than not it's because of its inductive bias. For example, convolutional neural networks are biased towards the kind of structure present in images: pixels next to each other are similar, there are similar features (e.g. eyes) present in different locations, big features are made of smaller features.
+A consequence of this is the no-free-lunch theorem. If your inductive bias works well on some type of data, it has to work badly on other kinds of data. 
+
+I think this takes special importance in Meta-Learning because the assumptions we make about the tasks we are learning can influence what we expect new tasks to look like. This may
+or may not be ideal. I would guess it depends if we know which tasks the agent might be faced with.
+
+
 
