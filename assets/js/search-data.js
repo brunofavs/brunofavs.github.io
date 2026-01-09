@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-bi-weekly-advisor-meeting-18th-of-december-2025",
+        },{id: "post-teaching-ppo-agent-to-play-flappy-bird-with-sb3-gymnasium",
+        
+          title: "Teaching PPO Agent to Play Flappy Bird with SB3/Gymnasium",
+        
+        description: "In this post, I explored a toy example to learn Stable Baselines3 (SB3) and Gymnasium.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/Flappy-Bird-SB3/";
+          
+        },
+      },{id: "post-bi-weekly-advisor-meeting-18th-of-december-2025",
         
           title: "Bi-Weekly Advisor Meeting 18th of December 2025",
         
