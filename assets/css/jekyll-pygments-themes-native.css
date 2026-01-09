@@ -1,6 +1,9 @@
 /* https://github.com/jwarby/jekyll-pygments-themes */
 .highlight pre {
-  background-color: #404040;
+
+  background-color: rgb(22 143 104 / 10%);
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  /* background-color: #404040; */
 }
 .highlight .hll {
   background-color: #404040;
