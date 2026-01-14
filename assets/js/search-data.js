@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-teaching-ppo-agent-to-play-flappy-bird-with-sb3-gymnasium",
+        },{id: "post-will-our-tactile-sensors-shape-the-direction-of-my-research",
+        
+          title: "Will Our Tactile Sensors Shape the Direction of My Research?",
+        
+        description: "A collection of thoughts lingering on my mind about the possible scope of my research.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/touch-reshape/";
+          
+        },
+      },{id: "post-teaching-ppo-agent-to-play-flappy-bird-with-sb3-gymnasium",
         
           title: "Teaching PPO Agent to Play Flappy Bird with SB3/Gymnasium",
         
