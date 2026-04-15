@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Struggling to narrow review article
+title: The Trade-off Between Breadth and Depth in Literature Reviews
 date: 2026-03-20 11:12:00-0400
-description: What following PRISMA framework blindly can do.
+description: A personal reflection on the limitations of a strictly systematic approach when the literature is too broad to meaningfully constrain.
 images:
   compare: true
   slider: true
