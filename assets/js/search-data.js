@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-will-our-tactile-sensors-shape-the-direction-of-my-research",
+        },{id: "post-the-trade-off-between-breadth-and-depth-in-literature-reviews",
+        
+          title: "The Trade-off Between Breadth and Depth in Literature Reviews",
+        
+        description: "A personal reflection on the limitations of a strictly systematic approach when the literature is too broad to meaningfully constrain.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/review_struggles/";
+          
+        },
+      },{id: "post-will-our-tactile-sensors-shape-the-direction-of-my-research",
         
           title: "Will Our Tactile Sensors Shape the Direction of My Research?",
         
