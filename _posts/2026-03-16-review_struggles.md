@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Trade-off Between Breadth and Depth in Literature Reviews
-date: 2026-03-20 11:12:00-0400
+date: 2026-03-16 11:12:00-0400
 description: A personal reflection on the limitations of a strictly systematic approach when the literature is too broad to meaningfully constrain.
 images:
   compare: true

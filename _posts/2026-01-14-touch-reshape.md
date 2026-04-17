@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Will Our Tactile Sensors Shape the Direction of My Research?
-date: 2026-01-09 11:12:00-0400
+date: 2026-01-14 11:12:00-0400
 description: A collection of thoughts lingering on my mind about the possible scope of my research.
 images:
   compare: true
