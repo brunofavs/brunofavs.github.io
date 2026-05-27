@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-the-trade-off-between-breadth-and-depth-in-literature-reviews",
+        },{id: "post-speeding-workflows-with-skills-md",
+        
+          title: "Speeding workflows with SKILLS.md",
+        
+        description: "Learning to leverage skills in LLM agents to speed cumbersome workflows with the aid of the new *skills.sh* tool, allowing developers to install modular skills and reusable workflows into AI coding agents using simple terminal commands.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/starting_to_use_skills/";
+          
+        },
+      },{id: "post-the-trade-off-between-breadth-and-depth-in-literature-reviews",
         
           title: "The Trade-off Between Breadth and Depth in Literature Reviews",
         

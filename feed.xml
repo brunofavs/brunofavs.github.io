@@ -1,4 +1,257 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://brunofavs.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://brunofavs.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-04-17T09:34:33+00:00</updated><id>https://brunofavs.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">The Trade-off Between Breadth and Depth in Literature Reviews</title><link href="https://brunofavs.github.io/blog/2026/review_struggles/" rel="alternate" type="text/html" title="The Trade-off Between Breadth and Depth in Literature Reviews"/><published>2026-03-16T15:12:00+00:00</published><updated>2026-03-16T15:12:00+00:00</updated><id>https://brunofavs.github.io/blog/2026/review_struggles</id><content type="html" xml:base="https://brunofavs.github.io/blog/2026/review_struggles/"><![CDATA[<p>Hello dear readers,</p> <p>I am writing this article to document the process of creating my first revision article. So far I have encountered quite a few struggles. For those unacquainted with my Ph.D. theme, this article will explore the use of tactile sensing in physical human-robot(pHRI) interactions. Up until late 2010s early 2020s, robot systems relied heavily on vision systems for control. While vision is great for broader perception, it lacks the precision required for finer manipulation. In the past five years, tactile sensing has become a trend within the field. With tactile sensing emerging in robots, the field of dexterous robotic manipulation rose similarly.</p> <p>Initially, I chose to follow the PRISMA framework to guide my article. The PRISMA framework is a conceptual process recommended for elaborating systematic literature reviews.</p> <figure> <picture> <img src="/assets/img/narrowing_review/prisma.avif" class="img-fluid rounded z-depth-1 text-center" width="800" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> <figcaption class="caption">PRISMA Framework</figcaption> </figure> <p>By following these steps, it allows the reader to recreate the search should he choose to. I found PRISMA to favor broader reviews, as limiting a review to the results of a few search equations can often make such equations very broad in nature, to encompass all topics of interest.</p> <p>I chose to use these 3 databases for my search, with the following search equations:</p> <h3 id="scopus">Scopus</h3> <div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TITLE</span><span class="o">-</span><span class="n">ABS</span><span class="o">-</span><span class="n">KEY</span> <span class="p">(</span> <span class="s">"contact"</span> <span class="n">OR</span> <span class="s">"contact-rich"</span> <span class="n">AND</span> <span class="p">(</span> <span class="s">"physical human-robot interaction"</span> <span class="n">OR</span> <span class="s">"pHRI"</span> <span class="p">)</span> <span class="p">)</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://brunofavs.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://brunofavs.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-05-27T21:39:26+00:00</updated><id>https://brunofavs.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Speeding workflows with SKILLS.md</title><link href="https://brunofavs.github.io/blog/2026/starting_to_use_skills/" rel="alternate" type="text/html" title="Speeding workflows with SKILLS.md"/><published>2026-05-27T15:12:00+00:00</published><updated>2026-05-27T15:12:00+00:00</updated><id>https://brunofavs.github.io/blog/2026/starting_to_use_skills</id><content type="html" xml:base="https://brunofavs.github.io/blog/2026/starting_to_use_skills/"><![CDATA[<p>A while back, an international friend visited, and we grabbed burgers at Ramona, spending most of the meal talking about AI workflows. My friend David is obsessed with efficiency. He runs a cluster of home servers that power autonomous agents handling all sorts of tasks on his behalf. At the core of that setup are agent “skills.”</p> <p>Claude introduced skills in 2025, and the rest of the AI industry quickly followed suit. The concept is straightforward: a skill is a markdown file containing detailed step-by-step instructions for completing a specific task. A good skill anticipates edge cases and includes fallbacks for when a step goes wrong.</p> <p>The task itself can be anything — but the best candidates are tasks where a general-purpose LLM tends to struggle or produce inconsistent results. If a job requires very precise, repeatable behavior, a skill is the right tool.</p> <p>Earlier this year, in January 2026, Vercel launched skills.sh — a platform that standardizes how skills are published and shared, making them accessible to anyone. It was a turning point, and David’s enthusiasm for it was hard to ignore.</p> <p>I decided to try it myself. One task I do regularly is reviewing articles in my field, working toward a review paper due by the end of the year. My issue is that I rarely need to dig into every methodological detail. Unless I’m deep in the development phase and looking to borrow ideas from someone’s approach, a full read isn’t necessary. You can always hand a PDF directly to an LLM like GPT or Claude, but the responses tend to be inconsistent and often miss what you actually care about.</p> <p>Skills seemed like the right fix. I started by downloading two foundational ones: find-skills, published by Vercel, and skill-creator, published by Anthropic. Using the first, I searched for a skill to review scientific papers and landed on one that delivered solid results: research-paper-review. Then I used skill-creator to tailor it to my workflow. My customizations:</p> <ul> <li>Always search my Zotero library for the paper first</li> <li>Always output an Obsidian-compatible markdown file to a specific folder in my notes repository</li> <li>Extract figures that give an immediate intuition for the framework, architecture, or proposed methodology</li> <li>(TO DO) Make my blog and my work available to use as reference to tailor the responses to my work</li> </ul> <p>This might be easier to understand with a concrete example, so here is the final skill I use for reviewing papers — along with a sample note it produces. If a summary sparks enough curiosity, I can always go back for the full read. :)</p> <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">
+---</span>
+name: research-paper-review
+<span class="gh">description: Review and analyze academic research papers. Use this skill when the user asks to review a paper, analyze a publication, summarize research, critique methodology, extract key findings, compare papers, check for numerical inconsistencies, or assess novelty and contributions of academic work. Also triggers when the user mentions reading a PDF of a paper, wants a literature review, asks about related work, or wants to improve a paper before submission. Also triggers when the user gives just a paper title and asks for a review.
+---
+</span>
+<span class="gh"># Research Paper Review</span>
+
+Assist researchers in reviewing, analyzing, and criticizing academic papers systematically and thoroughly.
+
+<span class="gu">## When to Use</span>
+<span class="p">
+-</span> User asks to review, summarize, or critique a research paper
+<span class="p">-</span> User shares a PDF path or just a paper title
+<span class="p">-</span> User wants to assess methodology, contributions, or novelty
+<span class="p">-</span> User needs help writing a peer review
+<span class="p">-</span> User wants to compare multiple papers or do a literature survey
+<span class="p">-</span> User wants to improve a paper before submission (pre-submission review)
+<span class="p">-</span> User wants to check for numerical/statistical inconsistencies
+<span class="p">-</span> User wants venue-specific feedback (conference, journal, or preprint)
+
+<span class="gu">## Inputs</span>
+<span class="p">
+-</span> Paper: a full file path to a PDF <span class="gs">**or**</span> just a paper title (the skill will find it automatically)
+<span class="p">-</span> Target Venue (optional but recommended): conference, journal, or preprint target
+<span class="p">               -</span> Example: "Models 2026", "TOSEM", "Sosym", "arXiv preprint"
+<span class="p">-</span> Type of paper (optional but recommended): "full research" paper, "short" paper, "new ideas" paper, "tool demo", "poster",...
+<span class="p">-</span> Explicit reviewing guidelines (optional): if available provide a description or URL with the reviewing criteria.
+
+<span class="gu">## Review Workflow</span>
+
+<span class="gu">### Step 0: Locate the Paper</span>
+
+Before anything else, resolve where the paper lives.
+<span class="p">
+-</span> <span class="gs">**If the user gave a full file path**</span> (starts with <span class="sb">`/`</span> or <span class="sb">`~`</span>): use it directly. Skip to Step 1.
+<span class="p">-</span> <span class="gs">**If the user gave only a title or partial name**</span>: search for it recursively under <span class="sb">`~/Zotero/storage/`</span> using a case-insensitive filename match:
+  <span class="p">```</span><span class="nl">bash
+</span>  find ~/Zotero/storage/ <span class="nt">-iname</span> <span class="s2">"*&lt;title&gt;*"</span> <span class="nt">-type</span> f
+  <span class="p">```</span>
+<span class="p">  -</span> If <span class="gs">**exactly one match**</span> is found: use it silently and proceed.
+<span class="p">  -</span> If <span class="gs">**multiple matches**</span> are found: list them numbered and ask the user to pick one before continuing.
+<span class="p">  -</span> If <span class="gs">**no match**</span> is found: tell the user no PDF was found under <span class="sb">`~/Zotero/storage/`</span> matching that title, and ask them to provide the full path.
+
+<span class="gu">### Step 1: Pre-Processing / Venue Context</span>
+<span class="p">
+-</span> If target venue and/or the type of paper are provided, include them as context for all subsequent steps:
+<span class="gt">
+&gt; "Review this paper as if it is intended for [TARGET VENUE] as a [TYPE PAPER] submission. Consider typical standards, expectations, page limits, scope, and audience for this venue and type of paper"</span>
+<span class="p">
+-</span> Optional: Use the provided reviewing guidelines or try to find them on the venue website (if available) with standards for methodology, novelty, empirical rigor, validation and formatting.
+
+<span class="gu">### Step 2: Read the Paper</span>
+
+Identify the format and read accordingly:
+<span class="p">
+-</span> <span class="gs">**PDF**</span>: Use the Read tool with the <span class="sb">`pages`</span> parameter for large documents (max 20 pages per request).
+<span class="p">-</span> <span class="gs">**LaTeX source**</span>: Read the main <span class="sb">`.tex`</span> file first. Look for <span class="sb">`\input{}`</span> or <span class="sb">`\include{}`</span> commands to find additional sections, figures, and bibliography files. Use Grep to search for key commands like <span class="sb">`\begin{abstract}`</span>, <span class="sb">`\section`</span>, <span class="sb">`\cite`</span> across all <span class="sb">`.tex`</span> files.
+<span class="p">-</span> <span class="gs">**Multiple files**</span>: Use Glob with <span class="sb">`**/*.tex`</span> to find all source files, then read them in logical order (main file → sections → appendix).
+
+In all cases, skim the abstract, introduction, and conclusion first to get the big picture before diving into details.
+
+<span class="gu">### Step 3: Structured Summary</span>
+
+Show that you understand the paper by producing a summary covering:
+<span class="p">
+1.</span> <span class="gs">**Problem Statement**</span> — What problem does the paper address? Why does it matter?
+<span class="p">2.</span> <span class="gs">**Contributions**</span> — What are the claimed contributions? (list them)
+<span class="p">3.</span> <span class="gs">**Approach/Methodology**</span> — How do the authors solve the problem?
+<span class="p">4.</span> <span class="gs">**Key Results**</span> — What are the main findings/metrics?
+<span class="p">5.</span> <span class="gs">**Limitations**</span> — What are the acknowledged (and unacknowledged) limitations?
+
+<span class="gu">### Step 3b: Visual Highlights &amp; Demo Links</span>
+
+Immediately after the Summary section in the output, include a <span class="gs">**"Visual Overview"**</span> section with two types of content:
+
+<span class="gs">**1. Demo / video links**</span>
+Scan the full text for any URLs pointing to video demonstrations, project pages, or supplementary material (e.g. YouTube, GitHub Pages, arXiv supplementary). Include every one you find as a markdown link with a short descriptive label.
+
+<span class="gs">**2. Key figures**</span>
+Identify figures that give the reader an immediate intuition for the <span class="ge">*framework, architecture, or proposed methodology*</span> — the kind of diagram that, if shown to a newcomer, would let them grasp what the paper is about in seconds. Good candidates:
+<span class="p">-</span> System/pipeline overview diagrams
+<span class="p">-</span> Architecture figures (e.g. neural network layout, agent loop)
+<span class="p">-</span> Methodology flow charts
+<span class="p">-</span> Qualitative results showing the system <span class="ge">*in action*</span> (e.g. robot performing a task, step-by-step execution)
+
+Exclude figures whose primary purpose is to report a metric rather than explain a concept: training curves, bar charts, ablation tables, confusion matrices, result plots.
+
+For each selected figure, extract it using this strategy — try in order, stop at the first that succeeds:
+
+<span class="gs">**Method 1 — `pdfimages -all` (preferred, extracts only the image without surrounding text)**</span>
+<span class="p">```</span><span class="nl">bash
+</span>pdfimages <span class="nt">-all</span> <span class="nt">-f</span> &lt;page&gt; <span class="nt">-l</span> &lt;page&gt; <span class="s2">"/path/to/paper.pdf"</span> /tmp/fig_&lt;N&gt;
+<span class="c"># produces: /tmp/fig_&lt;N&gt;-000.png, /tmp/fig_&lt;N&gt;-001.jpg, etc.</span>
+<span class="p">```</span>
+<span class="p">-</span> If <span class="gs">**one image**</span> is produced: use it directly.
+<span class="p">-</span> If <span class="gs">**multiple images**</span> are produced (sub-panels, logos, decorations): pick the largest file by size — it is almost certainly the main figure. Discard obviously small ones.
+<span class="p">-</span> If <span class="gs">**no images**</span> are produced (figure is vector/text-based with no raster content): fall through to Method 2.
+
+<span class="gs">**Method 2 — `pdftoppm` (full-page render, always works but includes surrounding text)**</span>
+<span class="p">```</span><span class="nl">bash
+</span>pdftoppm <span class="nt">-f</span> &lt;page&gt; <span class="nt">-l</span> &lt;page&gt; <span class="nt">-r</span> 200 <span class="nt">-png</span> <span class="s2">"/path/to/paper.pdf"</span> /tmp/fig_&lt;N&gt;
+<span class="p">```</span>
+
+<span class="gs">**Saving and embedding**</span>
+Save the result to <span class="sb">`~/notes/Media/&lt;paper title&gt; - Fig &lt;N&gt;.png`</span> — convert to PNG using <span class="sb">`magick`</span> (ImageMagick v7):
+<span class="p">```</span><span class="nl">bash
+</span>magick /tmp/fig_&lt;N&gt;-000.jpg <span class="s2">"~/notes/Media/&lt;paper title&gt; - Fig &lt;N&gt;.png"</span>
+<span class="p">```</span>
+Then embed in the markdown with a fixed display width of 1000px (Obsidian syntax):
+<span class="p">```</span><span class="nl">
+</span>![[&lt;paper title&gt; - Fig &lt;N&gt;.png|1000]]
+<span class="p">```</span>
+
+If neither method is feasible, fall back to a plain-text reference: <span class="ge">*"Fig. N — [caption] (p. X)"*</span>.<span class="sb">
+
+
+</span><span class="gu">### Step 4: Numerical &amp; Consistency Checks</span>
+
+This is where LLM-assisted review adds the most value, catching things humans easily miss during manual review. Run these checks systematically:
+<span class="p">
+-</span> <span class="gs">**Numbers across text, tables, and figures**</span>: Do values reported in the text match what's in the tables? Do figures reflect the data described?
+<span class="p">-</span> <span class="gs">**Statistical consistency**</span>: Do p-values, confidence intervals, and effect sizes align? Are sample sizes consistent throughout?
+<span class="p">-</span> <span class="gs">**Calculations**</span>: Verify percentages, averages, sums. Check that reported improvements (e.g., "30% improvement") match the actual numbers.
+<span class="p">-</span> <span class="gs">**Internal references**</span>: Do all <span class="se">\r</span>ef, <span class="se">\c</span>ite, figure/table references resolve? Are there dangling references or wrong numbering?
+<span class="p">-</span> <span class="gs">**Acronyms**</span>: Are all acronyms defined on first use?
+<span class="p">-</span> <span class="gs">**Terminology consistency**</span>: Is the same concept always referred to with the same term?
+<span class="p">-</span> <span class="gs">**Citations**</span>: Do all citations exist? Is citation style uniform (i.e. all conference papers are cited using the same fields, same for other venues)
+
+Even minor errors (typos, broken references, wrong numbering) matter — reviewers often use these as signals that the paper was not carefully prepared.
+
+<span class="gu">### Step 5: Critical Analysis</span>
+
+Evaluate the paper on these dimensions:
+
+| Dimension | Questions to Answer |
+|-----------|-------------------|
+| <span class="gs">**Novelty**</span> | Is this genuinely new? How does it differ from prior work? |
+| <span class="gs">**Soundness**</span> | Is the methodology rigorous? Are experiments well-designed? |
+| <span class="gs">**Significance**</span> | Does this advance the field meaningfully? |
+| <span class="gs">**Clarity**</span> | Is the paper well-written and well-structured? |
+| <span class="gs">**Reproducibility**</span> | Could someone replicate this work from the paper alone? |
+| <span class="gs">**Related Work**</span> | Is the positioning against prior work fair and complete? |
+| <span class="gs">**Venue Alignment**</span> | Does the paper meet expectations of the target venue (scope, depth, format, length, contribution type)? |<span class="sb">
+
+
+</span><span class="gu">### Step 6: Provide Actionable Feedback</span>
+
+Structure feedback as:
+<span class="p">
+-</span> <span class="gs">**Strengths**</span> — What the paper does well (be specific, cite sections)
+<span class="p">-</span> <span class="gs">**Weaknesses**</span> — What could be improved (be constructive, suggest fixes)
+<span class="p">-</span> <span class="gs">**Questions for Authors**</span> — Things that need clarification
+<span class="p">-</span> <span class="gs">**Minor Issues**</span> — Typos, formatting, citation issues, broken references
+<span class="p">-</span> <span class="gs">**Venue-Specific Recommendations**</span> — Highlight alignment issues, potential improvements to meet venue expectations
+
+<span class="gu">### Step 7: Top Actions — Start Here</span>
+
+Write down a list of the top 10 most immediate actions that the author should address.
+
+These should be the ones that will bring the best "bang for the buck", i.e. actions that generate the most benefit relative to the cost of implementing them.<span class="sb">
+
+
+</span><span class="gu">## Output Format</span>
+
+The review must be saved as an <span class="gs">**Obsidian-compatible markdown file**</span>. This means:
+<span class="p">
+-</span> Use standard markdown syntax throughout (headings, bold, italics, bullet lists, tables, horizontal rules)
+<span class="p">-</span> Begin the file with a <span class="gs">**YAML frontmatter block**</span> containing key metadata that Obsidian can index and display
+<span class="p">-</span> Use <span class="sb">`#`</span> headings rather than HTML or other markup
+<span class="p">-</span> Keep tables in standard markdown pipe format
+<span class="p">-</span> Avoid raw HTML tags — they won't render cleanly in Obsidian's reading view
+
+Use this exact template (fill in all fields):
+
+<span class="gh">```markdown
+---
+</span>title: "<span class="nt">&lt;full</span> <span class="na">paper</span> <span class="na">title</span><span class="nt">&gt;</span>"
+authors: "<span class="nt">&lt;Author1</span><span class="err">,</span> <span class="na">Author2</span><span class="err">,</span> <span class="err">...</span><span class="nt">&gt;</span>"
+year: <span class="nt">&lt;publication</span> <span class="na">year</span><span class="nt">&gt;</span>
+venue: "<span class="nt">&lt;journal</span> <span class="na">or</span> <span class="na">conference</span> <span class="na">name</span><span class="nt">&gt;</span>"
+doi: "<span class="nt">&lt;DOI</span> <span class="na">if</span> <span class="na">available</span><span class="err">,</span> <span class="na">else</span> <span class="na">omit</span><span class="nt">&gt;</span>"
+tags:
+<span class="p">  -</span> paper-review
+<span class="p">  -</span> <span class="nt">&lt;field</span> <span class="na">tag</span><span class="err">,</span> <span class="na">e.g.</span> <span class="na">reinforcement-learning</span><span class="nt">&gt;</span>
+<span class="p">  -</span> <span class="nt">&lt;another</span> <span class="na">relevant</span> <span class="na">tag</span><span class="nt">&gt;</span>
+date_reviewed: <span class="nt">&lt;today</span><span class="err">'</span><span class="na">s</span> <span class="na">date</span><span class="err">,</span> <span class="na">YYYY-MM-DD</span><span class="nt">&gt;</span>
+<span class="gh">overall: "&lt;accept | major-revision | minor-revision | reject&gt;"
+---
+</span>
+<span class="gh"># Paper Review: [Title]</span>
+
+<span class="gu">## Summary</span>
+[2-3 paragraph summary]
+
+<span class="gu">## Visual Overview</span>
+
+<span class="gu">### Demo Videos</span>
+<span class="p">-</span> <span class="p">[</span><span class="nv">Demo title</span><span class="p">](</span><span class="sx">URL</span><span class="p">)</span>
+
+<span class="gu">### Key Figures</span>
+![[<span class="nt">&lt;paper</span> <span class="na">title</span><span class="nt">&gt;</span> - Fig N.png|1000]]
+<span class="ge">*Fig. N — [caption describing what it shows]*</span>
+
+<span class="gu">## Strengths</span>
+<span class="p">-</span> S1: ...
+<span class="p">-</span> S2: ...
+
+<span class="gu">## Weaknesses</span>
+<span class="p">-</span> W1: ...
+<span class="p">-</span> W2: ...
+
+<span class="gu">## Questions for Authors</span>
+<span class="p">-</span> Q1: ...
+
+<span class="gu">## Minor Issues</span>
+<span class="p">-</span> ...
+
+<span class="gu">## Venue-Specific Recommendations</span>
+<span class="p">-</span> V1: ...
+<span class="p">-</span> V2: ...
+
+<span class="gu">## Overall Assessment</span>
+[1 paragraph verdict: accept/revise/reject with justification]
+
+<span class="gu">## Top Actions — Start Here</span>
+<span class="p">-</span> T1: ...
+<span class="p">-</span> T2: ...
+
+<span class="gu">## Confidence</span>
+[Your confidence level in this review: low/medium/high, and why]
+<span class="p">```</span><span class="nl">
+</span>
+## Step 8: Save the Review
+
+After the review is written, save it to disk.
+
+**Determine the output filename**: use only the paper title (no path prefix, no author names). Spaces in the filename are fine. For example, for a paper titled *"Attention Is All You Need"*, the output path is:
+<span class="p">```</span>
+~/notes/Literature/Papers Briefly Analyzed/Attention Is All You Need.md
+<span class="p">```</span><span class="nl">
+</span>
+**Check for an existing file first**:
+<span class="p">```</span>bash
+ls ~/notes/Literature/Papers<span class="se">\ </span>Briefly<span class="se">\ </span>Analyzed/<span class="nt">&lt;paper</span> <span class="na">title</span><span class="nt">&gt;</span>.md
+<span class="p">```</span><span class="nl">
+</span>- If the file **does not exist**: write it directly.
+- If the file **already exists**: ask the user:
+  &gt; "A review for **[paper title]** already exists. Would you like to **(1) Overwrite** the existing file or **(2) Append** the new review to it?"
+  - **(1) Overwrite**: replace the file content entirely with the new review.
+  - **(2) Append**: add a horizontal rule (`---`) followed by the new review at the end of the existing file. Note: appending will result in two YAML frontmatter blocks — warn the user that Obsidian only reads the first one, and suggest they merge them manually if needed.
+
+Confirm to the user once saved, including the full path of the file written.
+</code></pre></div></div> <h4 id="sample-note">Sample Note</h4> <h3 id="paper-review-reinforcement-learning-for-precision-grasping-and-safety-critical-coordination-in-a-robotic-arm">Paper Review: Reinforcement Learning for Precision Grasping and Safety-Critical Coordination in a Robotic Arm</h3> <h2 id="summary">Summary</h2> <p>This paper presents a safety-focused deep reinforcement learning (DRL) approach for object manipulation in human–robot collaboration (HRC) scenarios. The authors integrate the Franka Emika Panda robotic arm into the OpenAI Safety Gym framework (via PyBullet) and evaluate two tasks of escalating complexity: Single-Object Phased Manipulation (SOPM) and Multi-Object Atomic Manipulation (MOAM). A Hierarchical RL (HRL) structure decomposes grasping into sequenced sub-policies (approach → place → retract → wait), and the system is modelled as a Constrained Markov Decision Process (CMDP).</p> <p>The central empirical contribution is a comparison between standard PPO and its Lagrangian-constrained variant (cPPO) for safety compliance during manipulation. The authors also introduce “Grasp Mechanics,” a tactile-feedback framework that bypasses visual input by using proprioceptive sensing, force detection, and slip monitoring. On training objects the system reaches 99% success rates; zero-shot transfer to unseen objects yields 84–95%, dropping to 60% for a geometrically irregular cleanser bottle. cPPO consistently achieves lower safety costs than PPO at the cost of slightly lower task reward and longer training time.</p> <p>A supplementary evaluation integrates the Safety Gym framework with the Handoversim benchmark for human-to-robot object handovers, but end-to-end autonomous grasping in Handoversim fails and falls back to hand-coded policies — a significant negative result that is acknowledged but underplayed.</p> <hr/> <h2 id="visual-overview">Visual Overview</h2> <h3 id="demo-videos">Demo Videos</h3> <ul> <li><a href="https://youtu.be/8K3nxhRS0Mk">Simulation-Based Experiments Demo</a></li> </ul> <h3 id="key-figures">Key Figures</h3> <p>![[Reinforcement learning for precision grasping and safety-critical coordination in a robotic arm - Fig 1.png|1000]] <em>Fig. 1 — Full system overview: the Safety Gym Panda robot environment (left) and the agent control loop with Grasp Mechanics sub-components — Orientation Optimisation, Adaptive Gripping, Position Targeting, Grip Validation, Geometry Extraction — feeding into the PPO/cPPO policy (right).</em></p> <p>![[Reinforcement learning for precision grasping and safety-critical coordination in a robotic arm - Fig 2.png|1000]] <em>Fig. 2 — Neural network architecture: 8-dimensional proprioceptive input → two 64-neuron hidden layers → actor network outputting position, orientation, and grasp-force control; critic networks estimating V(s) and Q(s,a). Tactile feedback from Grasp Mechanics feeds in alongside the feature representation.</em></p> <p>![[Reinforcement learning for precision grasping and safety-critical coordination in a robotic arm - Fig 3.png|1000]] <em>Fig. 3 — Zero-shot policy transfer in action: the trained policy successfully manipulates four unseen objects (teacup, soap bar, remote control, cleanser) while manoeuvring around an obstacle.</em></p> <hr/> <h2 id="strengths">Strengths</h2> <ul> <li><strong>S1 — Practical safety framing:</strong> Integrating cPPO within Safety Gym for a robotic arm is a meaningful engineering contribution. The CMDP cost-function formulation is sound and well-motivated.</li> <li><strong>S2 — Zero-shot transfer evaluation:</strong> Testing on 4 unseen objects with 40 trials each is a credible generalisation benchmark; the honest reporting of the 60% failure on the irregular cleanser bottle is appreciated.</li> <li><strong>S3 — Hierarchical task decomposition:</strong> The phase-structured HRL (approach/place/retract/wait) is well-motivated and produces interpretable, sample-efficient sub-policies.</li> <li><strong>S4 — Reduced visual dependency:</strong> Learning from low-dimensional proprioceptive state (8-dim) + tactile feedback is practically valuable for sim-to-real transfer, sidestepping the visual domain-adaptation bottleneck.</li> <li><strong>S5 — Transparent limitation acknowledgment:</strong> Fixed-orientation constraints, sim-to-real gap, and the Handoversim end-to-end failure are all clearly identified by the authors.</li> </ul> <h2 id="weaknesses">Weaknesses</h2> <ul> <li><strong>W1 — Numerical inconsistencies between Table 1 and Figure 4:</strong> Fig. 4 reports 97% for “Soap” and 93% for “Remote,” while Table 1 reports 95% for “Soap Bar” and 85% for “Remote Control” — discrepancies of 2 pp and 8 pp with no explanation.</li> <li><strong>W2 — No ablation study on the reward function:</strong> The reward has 6 components (approach, contact, slippage, lifting, placing, disposal, collision penalty). No ablation is provided to assess which components drive performance or safety compliance.</li> <li><strong>W3 — Weak baseline comparison:</strong> Only compared against hand-coded policies [14, 34] and Panda-Gym [18]. No comparison with other safe RL algorithms (CPO, TRPO-Lagrangian, SAC-Lagrangian).</li> <li><strong>W4 — Simulation-only evaluation:</strong> All results are simulation-based. The acknowledged sim-to-real gap is deferred entirely to future work despite the real-world HRC framing.</li> <li><strong>W5 — Handoversim failure underplayed:</strong> The Handoversim evaluation falls back to hand-coded policies and is disclosed only in Section 4.6.4, without being flagged in the abstract or contributions list.</li> <li><strong>W6 — Misleading “Final Avg Reward %” label in Table 3:</strong> Values of 9.5 and 7.5 labeled as percentages are actually raw episode reward scores (y-axis 0–10 in Figs 6–7).</li> <li><strong>W7 — No statistical rigor:</strong> No confidence intervals, standard deviations, or significance tests anywhere. The abstract calls cPPO “comparable” to PPO despite a 7.4% reward gap (9.5 vs 8.8 in SOPM) — unsubstantiated without significance testing.</li> </ul> <h2 id="questions-for-authors">Questions for Authors</h2> <ul> <li><strong>Q1:</strong> What explains the discrepancy between Table 1 and Figure 4 for Soap Bar (95% vs 97%) and Remote Control (85% vs 93%)?</li> <li><strong>Q2:</strong> In Table 3, what does “Final Avg Reward %” mean exactly? What is the maximum achievable reward?</li> <li><strong>Q3:</strong> Was a single policy evaluated on both SOPM and MOAM, or are these separate policies? How were the 40 zero-shot trials structured across tasks?</li> <li><strong>Q4:</strong> What is the quantitative benefit of Grasp Mechanics in isolation — what is the success rate of cPPO <em>without</em> it?</li> <li><strong>Q5:</strong> The MOAM task achieves ~7.5 reward units — how does this map to the percentage of complete 3-object episodes successfully finished?</li> </ul> <h2 id="minor-issues">Minor Issues</h2> <ul> <li>The collision penalty reward ($r_{\text{collision}} = 1$ if collision) has the <strong>wrong sign</strong> — a penalty should be negative. Appears to be a notation error in Section 4.1.</li> <li><strong>HRL</strong> and <strong>HRC</strong> are used before their first formal definition in the Introduction.</li> <li>The YouTube video link (p. 3) is embedded inline in the body text — should be a footnote or supplementary reference.</li> <li>“Data Availability: There are no shareable data associated with this paper” is misleading — training data is simulation-generated and reproducible from the released code.</li> <li>Section 5 conflates experimental results (5.1) with discussion and conclusion (5.2); a standalone Conclusion section would improve readability.</li> </ul> <h2 id="venue-specific-recommendations">Venue-Specific Recommendations</h2> <ul> <li><strong>V1 — Real hardware pilot:</strong> <em>Intelligent Service Robotics</em> expects results relevant to actual service robot deployments. Even a small real-hardware experiment on the physical Panda would substantially strengthen the venue fit.</li> <li><strong>V2 — Tighten contributions vs evidence mapping:</strong> The Handoversim contribution (bullet 5, Section 1.2) is not supported by positive results and should be reframed as a negative finding or removed from the contributions list.</li> </ul> <h2 id="overall-assessment">Overall Assessment</h2> <p><strong>Major Revision.</strong> The paper makes a legitimate engineering contribution — integrating a constrained RL framework with a robotic arm in Safety Gym and demonstrating meaningful zero-shot grasping generalisation with a tactile-feedback approach. However, it is undermined by numerical inconsistencies between a figure and a table, a misleadingly labelled metric in Table 3, an undisclosed end-to-end failure in the Handoversim benchmark, absence of ablation studies, and a complete lack of statistical reporting. These are all correctable, but they must be addressed before the paper fully delivers on its stated claims.</p> <h2 id="top-actions--start-here">Top Actions — Start Here</h2> <table> <thead> <tr> <th>#</th> <th>Action</th> <th>Impact</th> <th>Effort</th> </tr> </thead> <tbody> <tr> <td><strong>T1</strong></td> <td>Reconcile Table 1 vs Fig. 4 (Soap Bar 95% vs 97%; Remote 85% vs 93%) — fix or explain</td> <td>High</td> <td>Low</td> </tr> <tr> <td><strong>T2</strong></td> <td>Fix “Final Avg Reward %” label in Table 3 — clarify scale, remove misleading “%”</td> <td>High</td> <td>Low</td> </tr> <tr> <td><strong>T3</strong></td> <td>Fix collision reward sign in Section 4.1 — should be negative to penalise collisions</td> <td>High</td> <td>Low</td> </tr> <tr> <td><strong>T4</strong></td> <td>Add variance/confidence intervals to Table 1, Table 3, and Figs 6–7</td> <td>High</td> <td>Medium</td> </tr> <tr> <td><strong>T5</strong></td> <td>Reflect Handoversim end-to-end failure in the abstract and contributions list</td> <td>High</td> <td>Low</td> </tr> <tr> <td><strong>T6</strong></td> <td>Add ablation: at minimum compare with/without Grasp Mechanics and with/without slippage penalty</td> <td>High</td> <td>Medium</td> </tr> <tr> <td><strong>T7</strong></td> <td>Add at least one additional safe RL baseline (CPO or TRPO-Lagrangian)</td> <td>Medium</td> <td>Medium</td> </tr> <tr> <td><strong>T8</strong></td> <td>Clarify the zero-shot transfer protocol and how the 40 trials were structured</td> <td>Medium</td> <td>Low</td> </tr> <tr> <td><strong>T9</strong></td> <td>Separate the Conclusion from Section 5 into a standalone section</td> <td>Low</td> <td>Low</td> </tr> <tr> <td><strong>T10</strong></td> <td>Define HRL and HRC on first use; move the YouTube link to a footnote</td> <td>Low</td> <td>Low</td> </tr> </tbody> </table> <h2 id="confidence">Confidence</h2> <p><strong>Medium-High.</strong> Full paper read (19 pages). Numerical inconsistencies verified directly against figures and tables. Confidence slightly reduced on Grasp Mechanics evaluation claims, as its contribution is described qualitatively without an isolated baseline comparison.</p> <hr/> <p>As a final note, as you may have guessed, I also used a <a href="https://www.skills.sh/haowjy/creative-writing-skills/prose-writing">skill</a> to improve my writing :)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learning to leverage skills in LLM agents to speed cumbersome workflows with the aid of the new *skills.sh* tool, allowing developers to install modular skills and reusable workflows into AI coding agents using simple terminal commands.]]></summary></entry><entry><title type="html">The Trade-off Between Breadth and Depth in Literature Reviews</title><link href="https://brunofavs.github.io/blog/2026/review_struggles/" rel="alternate" type="text/html" title="The Trade-off Between Breadth and Depth in Literature Reviews"/><published>2026-03-16T15:12:00+00:00</published><updated>2026-03-16T15:12:00+00:00</updated><id>https://brunofavs.github.io/blog/2026/review_struggles</id><content type="html" xml:base="https://brunofavs.github.io/blog/2026/review_struggles/"><![CDATA[<p>Hello dear readers,</p> <p>I am writing this article to document the process of creating my first revision article. So far I have encountered quite a few struggles. For those unacquainted with my Ph.D. theme, this article will explore the use of tactile sensing in physical human-robot(pHRI) interactions. Up until late 2010s early 2020s, robot systems relied heavily on vision systems for control. While vision is great for broader perception, it lacks the precision required for finer manipulation. In the past five years, tactile sensing has become a trend within the field. With tactile sensing emerging in robots, the field of dexterous robotic manipulation rose similarly.</p> <p>Initially, I chose to follow the PRISMA framework to guide my article. The PRISMA framework is a conceptual process recommended for elaborating systematic literature reviews.</p> <figure> <picture> <img src="/assets/img/narrowing_review/prisma.avif" class="img-fluid rounded z-depth-1 text-center" width="800" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> <figcaption class="caption">PRISMA Framework</figcaption> </figure> <p>By following these steps, it allows the reader to recreate the search should he choose to. I found PRISMA to favor broader reviews, as limiting a review to the results of a few search equations can often make such equations very broad in nature, to encompass all topics of interest.</p> <p>I chose to use these 3 databases for my search, with the following search equations:</p> <h3 id="scopus">Scopus</h3> <div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TITLE</span><span class="o">-</span><span class="n">ABS</span><span class="o">-</span><span class="n">KEY</span> <span class="p">(</span> <span class="s">"contact"</span> <span class="n">OR</span> <span class="s">"contact-rich"</span> <span class="n">AND</span> <span class="p">(</span> <span class="s">"physical human-robot interaction"</span> <span class="n">OR</span> <span class="s">"pHRI"</span> <span class="p">)</span> <span class="p">)</span>
 <span class="n">AND</span> <span class="n">PUBYEAR</span> <span class="o">&gt;</span> <span class="mi">2019</span> <span class="n">AND</span> <span class="n">PUBYEAR</span> <span class="o">&lt;</span> <span class="mi">2027</span>
 </code></pre></div></div> <h3 id="ieeexplore">IEEExplore</h3> <div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="s">"contact"</span> <span class="n">OR</span> <span class="s">"contact-rich"</span><span class="p">)</span>
 <span class="n">AND</span> <span class="p">(</span><span class="s">"physical human-robot interaction"</span> <span class="n">OR</span> <span class="s">"pHRI"</span><span class="p">)</span>
